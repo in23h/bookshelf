@@ -51,13 +51,13 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
-        <Route exact path="/" render={() => (
+        <Route exact path={`${process.env.PUBLIC_URL}/`} render={() => (
           <ListBooks
             books={this.state.books}
             onUpdateShelf={this.updateShelf}
           />
         )} />
-        <Route path="/search" render={({ history }) => (
+        <Route path={`${process.env.PUBLIC_URL}/search`} render={({ history }) => (
           <Search
             books={this.state.books}
             onUpdateShelf={this.updateShelf}
