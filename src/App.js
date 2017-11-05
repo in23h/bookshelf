@@ -49,6 +49,7 @@ class BooksApp extends React.Component {
   }
 
   render() {
+    console.log('z', process.env.PUBLIC_URL)
     return (
       <div className="app">
         <Route exact path={`${process.env.PUBLIC_URL}/`} render={() => (
