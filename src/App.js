@@ -58,7 +58,7 @@ class BooksApp extends React.Component {
             onUpdateShelf={this.updateShelf}
           />
         )} />
-        <Route path={`${process.env.PUBLIC_URL}/search`} render={({ history }) => (
+        <Route path={`${process.env.PUBLIC_URL}/search`} render={() => (
           <Search
             books={this.state.books}
             onUpdateShelf={this.updateShelf}
