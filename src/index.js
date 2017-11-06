@@ -5,6 +5,6 @@ import App from './App'
 import './index.css'
 
 ReactDOM.render(
-  <BrowserRouter basename={`${process.env.PUBLIC_URL}`} ><App /></BrowserRouter>,
+  <BrowserRouter basename="/bookshelf" ><App /></BrowserRouter>,
   document.getElementById('root')
 )
