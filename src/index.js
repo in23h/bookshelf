@@ -5,6 +5,8 @@ import App from './App'
 import './index.css'
 
 ReactDOM.render(
-  <BrowserRouter basename="/bookshelf" ><App /></BrowserRouter>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 )
